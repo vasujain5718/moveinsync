@@ -1,16 +1,83 @@
-# React + Vite
+Fleet Alert Dashboard
+Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a basic Fleet Alert Monitoring Dashboard built using React.
+The application displays alert data in a tabular format and allows simple interaction such as searching, sorting, and resolving alerts.
 
-Currently, two official plugins are available:
+The goal of this project is to demonstrate core UI rendering and state management concepts in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Implemented Features
+1. Alert Summary
 
-## React Compiler
+Displays count of:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Open alerts
 
-## Expanding the ESLint configuration
+Escalated alerts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Resolved alerts
+
+Updates dynamically when an alert is resolved.
+
+2. Alerts Table
+
+Displays alert details including:
+
+ID
+
+Source
+
+Severity
+
+Status
+
+Driver
+
+Vehicle
+
+Clickable rows to view alert details.
+
+3. Search Functionality
+
+Search alerts by:
+
+Driver name
+
+Alert ID
+
+4. Sorting
+
+Sortable columns:
+
+ID
+
+Severity
+
+Status
+
+Clicking a column toggles ascending/descending order.
+
+5. Alert Detail View
+
+Displays selected alert information.
+
+Includes a Resolve Alert button.
+
+Status updates to "RESOLVED" when clicked.
+
+Technology Used
+
+React (Vite setup)
+
+JavaScript
+
+Basic inline styling (no external UI libraries)
+
+How to Run
+npm install
+npm run dev
+Notes
+
+Alert data is currently stored locally in the project.
+
+The focus of this implementation is on basic functionality and UI interaction.
