@@ -73,10 +73,13 @@ JavaScript
 
 Basic inline styling (no external UI libraries)
 
-How to Run
+<h1>How to Run </h1>
+
 npm install
+
 npm run dev
-Notes
+
+<h1>Notes</h1>
 
 Alert data is currently stored locally in the project.
 
